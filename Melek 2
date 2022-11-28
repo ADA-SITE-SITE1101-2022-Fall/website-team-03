@@ -1,0 +1,39 @@
+<ul class="author-overview-list">
+
+
+        <li class="
+        author-card
+        author-card--correspondent
+
+    " data-author-id="51650">
+          <div class="author-cardheader">
+
+
+
+            <img src="https://archive.cdn-thecorrespondent.com/image/KYLF_5N3RYgrBKQQ2wbRJJTWixM=/380x440/0495c5cb7d0a420a88dd1871292f1afb.png" class="author-cardavatar" role="presentation">
+          </div>
+          <div class="author-cardbody">
+            <h2 class="author-cardname">OluTimehin Adegbeye</h2>
+            <h3 class="author-cardexpertise">
+              Othering correspondent
+            </h3>
+            <p>
+              OluTimehin Adegbeye is a writer and speaker whose work focuses on rights and justice in gender, sexualities, and urbanisation. Her TED Talk  "Who Belongs in a City?", has been viewed over 2 million times.
+            </p>
+          </div>
+          <div class="author-cardfooter">
+            <div class="button-row mod-full-width">
+              <a href="https://thecorrespondent.com/olutimehinadegbeye" class="button mod-white link link--cover">
+                <span class="button-label">All stories</span>
+                <span class="button-icon">
+                        <span class="
+    icon
+    icon-arrow-right
+        " role="presentation">
+    </span>
+                    </span>
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
