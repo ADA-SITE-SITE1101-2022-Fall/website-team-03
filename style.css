@@ -18,13 +18,30 @@ body {
   max-width: 10000px;
   padding: 0 10px;
 }
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 .left-fill {
   margin: 0 auto;
-  max-width: 300px;
+  max-width: 800px;
   padding: 0 10px;
 }
+.member-img{
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
 .header {
-  background-color: #1177f7;
+  background-image:url('tumblr_lzs2skveU91r94e9jo1_500.gif'); background-repeat:repeat;;
   background-size: cover;
   height: 800px;
   text-align: center;
@@ -38,14 +55,53 @@ body {
   position: relative;
   top: 200px;
 }
+.row{
+  margin:0 auto;
+}
 .container p{
 }
+.member-list li{
+  display: inline;
+}
+.member-list{
+  height: 500px;
+  margin: 0 auto;
+}
+.team-border{
+  border:10px black;
+}
+h2{
+  border:2px black;
+  border-radius: 10px;
+  font-family: 'Special Elite';
+  font-size: 40px;
+}
 
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+h1, h3, h4, h5, h6, ol, p, ul {
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: 'Special Elite';
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
 .header h1 {
-  color: #fff;
+  color: #ffffff;
   line-height: 100px;
   font-size: 80px;
   margin-top: 0;
+  font-family: 'Special Elite';
+  font-style: italic;
+  border: 2px black;
   margin-bottom: 80px;
   text-transform: uppercase;
 }
@@ -80,6 +136,7 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 .nav ul {
@@ -95,7 +152,7 @@ body {
   height: 80px;
   line-height: 80px;
   list-style: none;
-  padding: 0 10px;
+  padding: 0 20px;
   transition: background .5s;
 }
 .nav ul li a{
@@ -126,7 +183,9 @@ body {
   object-position: bottom;
   margin: 10px 80px 50px 0;
 }
-
+.main{
+  background-image: url("./white-paper-texture-with-flecks.webp");
+}
 .footer {
   background: #000;
   height: 80px;
@@ -141,17 +200,54 @@ body {
   margin: 0;
 }
 
-@media (max-width: 500px) {
-  .header h1 {
-    font-size: 50px;
-    line-height: 64px;
-  }
 
-  .main {
-    padding: 0 30px;
-  }
+.slider{
+  width:400px;
+  height:500px;
+  border-radius:10px;
+  overflow:hidden;
+}
 
-  .main img {
-    width: 100%;
-  }
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  margin:0 auto;
+}
+
+
+.flip-box-inner {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
 }
